@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Markdown 语法 注：Markdown语法符号，必须是英文模式下的在段落中填写 [TOC] 以显示全文内容的目录结构。  〇、文章头格式front-matter的基本格式如下：12345678---title: Markdown 语法date: 2019年03月28日16:45:51tag: [Markdown,教程]categories: 学习toc: truemathjax: true-">
+<meta name="keywords" content="Markdown,教程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown 语法">
+<meta property="og:url" content="https://gtmastermio.github.io/2019/03/28/Markdown语法/index.html">
+<meta property="og:site_name" content="GTMasterMio&#39;s Blog">
+<meta property="og:description" content="Markdown 语法 注：Markdown语法符号，必须是英文模式下的在段落中填写 [TOC] 以显示全文内容的目录结构。  〇、文章头格式front-matter的基本格式如下：12345678---title: Markdown 语法date: 2019年03月28日16:45:51tag: [Markdown,教程]categories: 学习toc: truemathjax: true-">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.loli.net/2019/03/28/5c9c5eef3a5fc.png">
+<meta property="og:updated_time" content="2019-03-28T13:01:16.263Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Markdown 语法">
+<meta name="twitter:description" content="Markdown 语法 注：Markdown语法符号，必须是英文模式下的在段落中填写 [TOC] 以显示全文内容的目录结构。  〇、文章头格式front-matter的基本格式如下：12345678---title: Markdown 语法date: 2019年03月28日16:45:51tag: [Markdown,教程]categories: 学习toc: truemathjax: true-">
+<meta name="twitter:image" content="https://i.loli.net/2019/03/28/5c9c5eef3a5fc.png">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="https://gtmastermio.github.io/2019/03/28/Markdown语法/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Markdown 语法 | GTMasterMio's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">GTMasterMio's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://gtmastermio.github.io/2019/03/28/Markdown语法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="GTMasterMio">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GTMasterMio's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Markdown 语法
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-28 21:01:14 / Modified: 21:01:16" itemprop="dateCreated datePublished" datetime="2019-03-28T21:01:14+08:00">2019-03-28</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/" itemprop="url" rel="index"><span itemprop="name">学习</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Markdown-语法"><a href="#Markdown-语法" class="headerlink" title="Markdown 语法"></a>Markdown 语法</h1><blockquote>
+<p>注：Markdown语法符号，必须是英文模式下的<br>在段落中填写 [TOC] 以显示全文内容的目录结构。</p>
+</blockquote>
+<h1 id="〇、文章头格式"><a href="#〇、文章头格式" class="headerlink" title="〇、文章头格式"></a>〇、文章头格式</h1><p><code>front-matter</code>的基本格式如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Markdown 语法</span><br><span class="line">date: 2019年03月28日16:45:51</span><br><span class="line">tag: [Markdown,教程]</span><br><span class="line">categories: 学习</span><br><span class="line">toc: true</span><br><span class="line">mathjax: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><p>在想要设置为标题的文字前加#井号来表示<br>注：标准语法一般在#后需要加上空格。<br>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure></p>
+<p>预览效果：</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><hr>
+<h1 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h1><ul>
+<li><strong>斜体</strong></li>
+<li><strong>加粗</strong></li>
+<li><strong>斜体加粗</strong></li>
+<li><strong>删除线</strong></li>
+</ul>
+<p>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*这是斜体的文字*</span><br><span class="line">**这是加粗的文字**</span><br><span class="line">***这是斜体加粗的文字***</span><br><span class="line">~~这是加删除线的文字~~</span><br></pre></td></tr></table></figure></p>
+<p>预览效果：<br><em>这是斜体的文字</em><br><strong>这是加粗的文字</strong><br><strong><em>这是斜体加粗的文字</em></strong><br><del>这是加删除线的文字</del></p>
+<hr>
+<h1 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h1><p>在引用的文字前加&gt;右尖括号，引用可以嵌套，需要嵌套多少级就加多少个&gt;。<br>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;这是引用</span><br><span class="line">&gt;&gt;这是2级引用</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;n级引用</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>这是引用</p>
+<blockquote>
+<p>这是2级引用</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>n级引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<hr>
+<h1 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h1><p>三个或三个以上的-或者*或者_。<br>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">----</span><br><span class="line">___</span><br><span class="line">***</span><br><span class="line">****</span><br></pre></td></tr></table></figure></p>
+<p>预览效果：<br>其实效果是一样的，你也可以查看源码或自己试一试，验证效果</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h1 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h1><p>语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址 &quot;图片title&quot;)</span><br><span class="line">图片alt就是显示在图片下的文字，相当于对图片内容的解释。</span><br><span class="line">图片title是图片的标题，当鼠标移到图片上时，显示该内容，title是可选的，不加也可以。</span><br></pre></td></tr></table></figure></p>
+<p>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![Markdown](https://i.loli.net/2019/03/28/5c9c5eef3a5fc.png &quot;Markdown图片&quot;)</span><br></pre></td></tr></table></figure></p>
+<p>预览效果：<br><img src="https://i.loli.net/2019/03/28/5c9c5eef3a5fc.png" alt="Markdown" title="Markdown图片"></p>
+<h1 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h1><p>语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[超链接名称](超链接地址 “超链接title”)</span><br><span class="line">title是可选的。</span><br></pre></td></tr></table></figure></p>
+<p>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[GTM的Blog](https://blog.gtmio.com)</span><br><span class="line">[百度](https://www.baidu.com)</span><br></pre></td></tr></table></figure></p>
+<p>预览效果：<br><a href="https://blog.gtmio.com" target="_blank" rel="noopener">GTM的Blog</a><br><a href="https://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
+<h1 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h1><ul>
+<li><p><strong>无序列表</strong><br>语法：<br>无序列表用 - + * 任意一个开头<br>例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 无序列表1</span><br><span class="line">+ 无序列表2</span><br><span class="line">* 无序列表3</span><br><span class="line">+ 无序列表4</span><br></pre></td></tr></table></figure>
+<p>  预览效果：</p>
+<ul>
+<li>无序列表1</li>
+</ul>
+<ul>
+<li>无序列表2</li>
+</ul>
+<ul>
+<li>无序列表3</li>
+</ul>
+<ul>
+<li>无序列表4</li>
+</ul>
+</li>
+<li><p><strong>有序列表</strong><br>语法：<br>数字加.点号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.有序列表1</span><br><span class="line">2.有序列表2</span><br><span class="line">3.有序列表3</span><br></pre></td></tr></table></figure>
+<p>  预览效果：<br>  1.有序列表1<br>  2.有序列表2<br>  3.有序列表3</p>
+</li>
+<li><strong>列表嵌套</strong><br>上一级和下一级之间3个空格</li>
+<li>一级无序列表1<ul>
+<li>二级无序列表1</li>
+<li>二级无序列表2</li>
+</ul>
+</li>
+<li>一级无序列表2<br> 1.二级有序列表1<br> 2.二级有序列表2<br>1.一级有序列表1<ul>
+<li>二级无序列表3</li>
+<li>二级无序列表4<br>2.一级有序列表2<br>1.二级有序列表3<br>2.二级有序列表4</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h1><p>语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">---|:--:|--:</span><br><span class="line">数据1|数据2|数据3</span><br><span class="line">数据4|数据5|数据6</span><br><span class="line"></span><br><span class="line">说明：</span><br><span class="line">|管道符号分割列（PS：shift+\反斜杠就可以打出|管道符号）</span><br><span class="line">表头下一行确定格式</span><br><span class="line">-减号一个或多个，表示默认，默认居左</span><br><span class="line">:-:两边加冒号表示居中</span><br><span class="line">-:右边加冒号表示居右</span><br></pre></td></tr></table></figure></p>
+<p>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">学号|姓名|性别</span><br><span class="line">:-:|--:|---</span><br><span class="line">001|张三|男</span><br><span class="line">010|小名|男</span><br><span class="line">006|六姐|女</span><br></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">学号</th>
+<th style="text-align:center">姓名</th>
+<th style="text-align:right">性别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">001</td>
+<td style="text-align:center">张三</td>
+<td style="text-align:right">男</td>
+</tr>
+<tr>
+<td style="text-align:right">010</td>
+<td style="text-align:center">小名</td>
+<td style="text-align:right">男</td>
+</tr>
+<tr>
+<td style="text-align:right">006</td>
+<td style="text-align:center">六姐</td>
+<td style="text-align:right">女</td>
+</tr>
+</tbody>
+</table>
+<h1 id="九、代码"><a href="#九、代码" class="headerlink" title="九、代码"></a>九、代码</h1><p>语法：<br>单行代码：代码之间方别用一个反引号包裹起来<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`$ echo &apos;This is a single code&apos;`</span><br></pre></td></tr></table></figure></p>
+<p>代码块：代码块之间分别用三个反引号包裹起来<br>头三个反引号后，可以加代码所属的代码语言，可高亮相关代码语法<br>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">```bash</span><br><span class="line">if $1 == &apos;bash&apos;:</span><br><span class="line">    echo &apos;These are bash shell codes.&apos;</span><br><span class="line">if</span><br><span class="line">```</span><br></pre></td></tr></table></figure></p>
+<p>预览效果：<br>单行代码：<br><code>$ echo &#39;This is a single code&#39;</code><br>代码块：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="variable">$1</span> == <span class="string">'bash'</span>:</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'These are bash shell codes.'</span></span><br><span class="line"><span class="keyword">if</span></span><br></pre></td></tr></table></figure></p>
+<!--
+# 十、流程图
+语法：
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```flow</span><br><span class="line"></span><br><span class="line">&amp;```</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    A[A] --&gt; B(go)</span><br></pre></td></tr></table></figure>
+<p>–&gt;</p>
+-->
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Markdown/" rel="tag"># Markdown</a>
+          
+            <a href="/tags/教程/" rel="tag"># 教程</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/24/资料目录/" rel="next" title="资料目录">
+                <i class="fa fa-chevron-left"></i> 资料目录
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/02/JavaScript自学第一课/" rel="prev" title="JavaScript自学第一课">
+                JavaScript自学第一课 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">GTMasterMio</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">categories</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Markdown-语法"><span class="nav-number">1.</span> <span class="nav-text">Markdown 语法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#〇、文章头格式"><span class="nav-number">2.</span> <span class="nav-text">〇、文章头格式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、标题"><span class="nav-number">3.</span> <span class="nav-text">一、标题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number">4.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">4.1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">4.1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题"><span class="nav-number">4.1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题"><span class="nav-number">4.1.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">4.1.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、字体"><span class="nav-number">5.</span> <span class="nav-text">二、字体</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、引用"><span class="nav-number">6.</span> <span class="nav-text">三、引用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、分割线"><span class="nav-number">7.</span> <span class="nav-text">四、分割线</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、图片"><span class="nav-number">8.</span> <span class="nav-text">五、图片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、超链接"><span class="nav-number">9.</span> <span class="nav-text">六、超链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七、列表"><span class="nav-number">10.</span> <span class="nav-text">七、列表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#八、表格"><span class="nav-number">11.</span> <span class="nav-text">八、表格</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#九、代码"><span class="nav-number">12.</span> <span class="nav-text">九、代码</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">GTMasterMio</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.0"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
