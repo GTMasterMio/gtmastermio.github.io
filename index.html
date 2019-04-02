@@ -15,10 +15,10 @@
 
 
 <html class="theme-next muse use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
 
@@ -32,8 +32,6 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
@@ -46,6 +44,21 @@
 
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
 
 
 
@@ -53,40 +66,15 @@
 
 
 
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.0">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.0">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.0">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=6.4.0" color="#222">
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" id="hexo.configurations">
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    version: '6.4.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    version: '7.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -120,12 +108,13 @@
 
 
 
+  
+  
+  <link rel="canonical" href="https://gtmastermio.github.io/">
 
-  <link rel="canonical" href="https://gtmastermio.github.io/"/>
 
 
-
-<script type="text/javascript" id="page.configurations">
+<script id="page.configurations">
   CONFIG.page = {
     sidebar: "",
   };
@@ -142,30 +131,31 @@
 
 
 
+
+
+
   <noscript>
-  <style type="text/css">
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
 
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
-    }
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
 
-    .use-motion {
-      .logo-line-before i { left: initial; }
-      .logo-line-after i { right: initial; }
-    }
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
   </style>
 </noscript>
 
@@ -184,7 +174,7 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
@@ -194,6 +184,7 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
     
   </div>
 
@@ -217,16 +208,34 @@
         
           
           <li class="menu-item menu-item-home menu-item-active">
-    <a href="/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
   </li>
         
         
         
           
           <li class="menu-item menu-item-archives">
-    <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
   </li>
 
       
@@ -277,11 +286,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gtmastermio.github.io/2018/08/22/语义化版本_2.0.0/">
+    <link itemprop="mainEntityOfPage" href="https://gtmastermio.github.io/2019/04/02/文章1测试/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="GTMasterMio">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -296,9 +305,971 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/08/22/语义化版本_2.0.0/" itemprop="url">
-                  语义化版本_2.0.0
-                </a>
+                
+                <a href="/2019/04/02/文章1测试/" class="post-title-link" itemprop="url">文章1测试</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-04-02 11:33:45 / Modified: 11:34:47" itemprop="dateCreated datePublished" datetime="2019-04-02T11:33:45+08:00">2019-04-02</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://gtmastermio.github.io/2019/04/02/JavaScript自学第一课/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="GTMasterMio">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GTMasterMio's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/02/JavaScript自学第一课/" class="post-title-link" itemprop="url">JavaScript自学第一课</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-04-02 09:55:52 / Modified: 10:52:50" itemprop="dateCreated datePublished" datetime="2019-04-02T09:55:52+08:00">2019-04-02</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h1><p>1、;分号最好是必须的，虽然可以不是必须的，但是加了;分号，可以清楚相关语句语义，以免不必要的混淆。<br>2、缩进最好是必须的，虽然可以省略，但是缩进可让整体代码清晰明了，让自己和他人都容易阅读，如果觉得体积较大，可以选择一些压缩工具，将JavaScript代码进行压缩，但是源码还是保持整洁的。</p>
+<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><h3 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h3><p>JavaScript不区分整数和浮点数，统一用Number表示，以下都是合法的Number类型：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">123</span>; <span class="comment">// 整数123</span></span><br><span class="line"><span class="number">0.456</span>; <span class="comment">// 浮点数0.456</span></span><br><span class="line"><span class="number">1.2345e3</span>; <span class="comment">// 科学计数法表示1.2345x1000，等同于1234.5</span></span><br><span class="line"><span class="number">-99</span>; <span class="comment">// 负数</span></span><br><span class="line"><span class="literal">NaN</span>; <span class="comment">// NaN表示Not a Number，当无法计算结果时用NaN表示</span></span><br><span class="line"><span class="literal">Infinity</span>; <span class="comment">// Infinity表示无限大，当数值超过了JavaScript的Number所能表示的最大值时，就表示为Infinity</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><p>当我们对Number做比较时，可以通过比较运算符得到一个布尔值：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span> &gt; <span class="number">5</span>; <span class="comment">// false</span></span><br><span class="line"><span class="number">5</span> &gt;= <span class="number">2</span>; <span class="comment">// true</span></span><br><span class="line"><span class="number">7</span> == <span class="number">7</span>; <span class="comment">// true</span></span><br></pre></td></tr></table></figure></p>
+<p>实际上，JavaScript允许对任意数据类型做比较：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">false</span> == <span class="number">0</span>; <span class="comment">// true</span></span><br><span class="line"><span class="literal">false</span> === <span class="number">0</span>; <span class="comment">// false</span></span><br></pre></td></tr></table></figure></p>
+<p>要特别注意相等运算符<code>==</code>。JavaScript在设计时，有两种比较运算符：<br>一是<code>==</code>比较，它会自动转换数据类型再比较，很多时候，会得到非常诡异的结果；<br>二是<code>===</code>比较，它不会自动转换数据类型，如果数据类型不一致，返回<code>false</code>，如果一致，再比较。<br>由于JavaScript这个设计缺陷，<strong>不要</strong>使用<code>==</code>比较，始终坚持使用<code>===</code>比较。<br>另一个例外是<code>NaN</code>这个特殊的Number与所有其他值都不相等，包括它自己：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">NaN</span> === <span class="literal">NaN</span>; <span class="comment">//false</span></span><br></pre></td></tr></table></figure></p>
+<p>唯一能判断<code>NaN</code>的方法是通过<code>isNaN()</code>函数：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">isNaN</span>(<span class="literal">NaN</span>); <span class="comment">// true</span></span><br></pre></td></tr></table></figure></p>
+<p>最后要注意浮点数的相等比较：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> / <span class="number">3</span> === (<span class="number">1</span> - <span class="number">2</span> / <span class="number">3</span>); <span class="comment">//false</span></span><br></pre></td></tr></table></figure></p>
+<p>这不是JavaScript的设计缺陷。浮点数在运算过程中会产生误差，因为计算机无法精确表示无限循环小数。要比较两个浮点是否相等，只能计算它们之差的绝对值，看是否小于某个阈值：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.abs(<span class="number">1</span> / <span class="number">3</span> - (<span class="number">1</span> - <span class="number">2</span> / <span class="number">3</span>)) &lt; <span class="number">0.0000001</span>; <span class="comment">// true</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="null和undefined"><a href="#null和undefined" class="headerlink" title="null和undefined"></a>null和undefined</h3><p><code>null</code>表示一个“空”的值，它和<code>0</code>以及空字符串<code>&#39;&#39;</code>不同，<code>0</code>是一个数值，<code>&#39;&#39;</code>表示长度为0的字符串，而<code>null</code>表示“空”。</p>
+<p>在其他语言中，也有类似JavaScript的<code>null</code>的表示你，例如Java也有<code>null</code>，Swift用<code>nil</code>，Python用<code>None</code>表示。但是，在JavaScript中，还有一个和<code>null</code>类似的<code>undefined</code>，表示“未定义”。</p>
+<p>JavaScript的设计者希望用<code>null</code>表示一个空的值，而<code>undefined</code>表示值未定义。事实证明，这并没有卵用，区分两者的意义不大。大多数情况下，我们都应该用<code>null</code>。<code>undefined</code>仅仅在判断函数参数是否传递的情况下有用。</p>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p>数组是一组按顺序排版的集合。集合的每个值称为元素。JavaScript的数组可以包括任意数据类型。例如：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3.14</span>, <span class="string">'Hello'</span>, <span class="literal">null</span>, <span class="literal">true</span>];</span><br></pre></td></tr></table></figure></p>
+<p>上述数组包含6个元素。数组用<code>[]</code>表示，元素之间用<code>,</code>分隔。<br>另一种创建数组的方法是通过<code>Array()</code>函数实现：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>); <span class="comment">//创建了数组[1, 2, 3]</span></span><br></pre></td></tr></table></figure></p>
+<p>然而，出于代码的可读性考虑，强烈建议直接使用<code>[]</code>。<br>数组的元素可以通过索引来访问。请注意，索引的起始值为<code>0</code>：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3.14</span>, <span class="string">'Hello'</span>, <span class="literal">null</span>, <span class="literal">true</span>];</span><br><span class="line">arr[<span class="number">0</span>]; <span class="comment">// 返回索引为0的元素，即1</span></span><br><span class="line">arr[<span class="number">5</span>]; <span class="comment">// 返回索引为5的元素，即true</span></span><br><span class="line">arr[<span class="number">6</span>]; <span class="comment">// 索引超出了范围，返回undefined</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><p>JavaScript的对象是一组由键-值组成的无序集合，例如:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">    name: <span class="string">'Bob'</span>,</span><br><span class="line">    age: <span class="number">20</span>,</span><br><span class="line">    tags: [<span class="string">'js'</span>, <span class="string">'web'</span>, <span class="string">'mobile'</span>],</span><br><span class="line">    city: <span class="string">'Beijing'</span>,</span><br><span class="line">    hasCar: <span class="literal">true</span>,</span><br><span class="line">    zipcode: <span class="literal">null</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>JavaScript对象的键都是字符串类型，值可以是任意数据类型。上述<code>person</code>对象一共定义了6个键值，其中每个键又称为对象的属性，例如，<code>person</code>的<code>name</code>属性为<code>Bob</code>，<code>zipcode</code>属性为<code>null</code>。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://gtmastermio.github.io/2019/03/28/Markdown语法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="GTMasterMio">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GTMasterMio's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/28/Markdown语法/" class="post-title-link" itemprop="url">Markdown 语法</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-28 21:01:14 / Modified: 21:01:16" itemprop="dateCreated datePublished" datetime="2019-03-28T21:01:14+08:00">2019-03-28</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习/" itemprop="url" rel="index"><span itemprop="name">学习</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Markdown-语法"><a href="#Markdown-语法" class="headerlink" title="Markdown 语法"></a>Markdown 语法</h1><blockquote>
+<p>注：Markdown语法符号，必须是英文模式下的<br>在段落中填写 [TOC] 以显示全文内容的目录结构。</p>
+</blockquote>
+<h1 id="〇、文章头格式"><a href="#〇、文章头格式" class="headerlink" title="〇、文章头格式"></a>〇、文章头格式</h1><p><code>front-matter</code>的基本格式如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Markdown 语法</span><br><span class="line">date: 2019年03月28日16:45:51</span><br><span class="line">tag: [Markdown,教程]</span><br><span class="line">categories: 学习</span><br><span class="line">toc: true</span><br><span class="line">mathjax: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><p>在想要设置为标题的文字前加#井号来表示<br>注：标准语法一般在#后需要加上空格。<br>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure></p>
+<p>预览效果：</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><hr>
+<h1 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h1><ul>
+<li><strong>斜体</strong></li>
+<li><strong>加粗</strong></li>
+<li><strong>斜体加粗</strong></li>
+<li><strong>删除线</strong></li>
+</ul>
+<p>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*这是斜体的文字*</span><br><span class="line">**这是加粗的文字**</span><br><span class="line">***这是斜体加粗的文字***</span><br><span class="line">~~这是加删除线的文字~~</span><br></pre></td></tr></table></figure></p>
+<p>预览效果：<br><em>这是斜体的文字</em><br><strong>这是加粗的文字</strong><br><strong><em>这是斜体加粗的文字</em></strong><br><del>这是加删除线的文字</del></p>
+<hr>
+<h1 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h1><p>在引用的文字前加&gt;右尖括号，引用可以嵌套，需要嵌套多少级就加多少个&gt;。<br>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;这是引用</span><br><span class="line">&gt;&gt;这是2级引用</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;n级引用</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>这是引用</p>
+<blockquote>
+<p>这是2级引用</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>n级引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<hr>
+<h1 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h1><p>三个或三个以上的-或者*或者_。<br>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">----</span><br><span class="line">___</span><br><span class="line">***</span><br><span class="line">****</span><br></pre></td></tr></table></figure></p>
+<p>预览效果：<br>其实效果是一样的，你也可以查看源码或自己试一试，验证效果</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h1 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h1><p>语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址 &quot;图片title&quot;)</span><br><span class="line">图片alt就是显示在图片下的文字，相当于对图片内容的解释。</span><br><span class="line">图片title是图片的标题，当鼠标移到图片上时，显示该内容，title是可选的，不加也可以。</span><br></pre></td></tr></table></figure></p>
+<p>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![Markdown](https://i.loli.net/2019/03/28/5c9c5eef3a5fc.png &quot;Markdown图片&quot;)</span><br></pre></td></tr></table></figure></p>
+<p>预览效果：<br><img src="https://i.loli.net/2019/03/28/5c9c5eef3a5fc.png" alt="Markdown" title="Markdown图片"></p>
+<h1 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h1><p>语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[超链接名称](超链接地址 “超链接title”)</span><br><span class="line">title是可选的。</span><br></pre></td></tr></table></figure></p>
+<p>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[GTM的Blog](https://blog.gtmio.com)</span><br><span class="line">[百度](https://www.baidu.com)</span><br></pre></td></tr></table></figure></p>
+<p>预览效果：<br><a href="https://blog.gtmio.com" target="_blank" rel="noopener">GTM的Blog</a><br><a href="https://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
+<h1 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h1><ul>
+<li><p><strong>无序列表</strong><br>语法：<br>无序列表用 - + * 任意一个开头<br>例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 无序列表1</span><br><span class="line">+ 无序列表2</span><br><span class="line">* 无序列表3</span><br><span class="line">+ 无序列表4</span><br></pre></td></tr></table></figure>
+<p>  预览效果：</p>
+<ul>
+<li>无序列表1</li>
+</ul>
+<ul>
+<li>无序列表2</li>
+</ul>
+<ul>
+<li>无序列表3</li>
+</ul>
+<ul>
+<li>无序列表4</li>
+</ul>
+</li>
+<li><p><strong>有序列表</strong><br>语法：<br>数字加.点号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.有序列表1</span><br><span class="line">2.有序列表2</span><br><span class="line">3.有序列表3</span><br></pre></td></tr></table></figure>
+<p>  预览效果：<br>  1.有序列表1<br>  2.有序列表2<br>  3.有序列表3</p>
+</li>
+<li><strong>列表嵌套</strong><br>上一级和下一级之间3个空格</li>
+<li>一级无序列表1<ul>
+<li>二级无序列表1</li>
+<li>二级无序列表2</li>
+</ul>
+</li>
+<li>一级无序列表2<br> 1.二级有序列表1<br> 2.二级有序列表2<br>1.一级有序列表1<ul>
+<li>二级无序列表3</li>
+<li>二级无序列表4<br>2.一级有序列表2<br>1.二级有序列表3<br>2.二级有序列表4</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h1><p>语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">---|:--:|--:</span><br><span class="line">数据1|数据2|数据3</span><br><span class="line">数据4|数据5|数据6</span><br><span class="line"></span><br><span class="line">说明：</span><br><span class="line">|管道符号分割列（PS：shift+\反斜杠就可以打出|管道符号）</span><br><span class="line">表头下一行确定格式</span><br><span class="line">-减号一个或多个，表示默认，默认居左</span><br><span class="line">:-:两边加冒号表示居中</span><br><span class="line">-:右边加冒号表示居右</span><br></pre></td></tr></table></figure></p>
+<p>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">学号|姓名|性别</span><br><span class="line">:-:|--:|---</span><br><span class="line">001|张三|男</span><br><span class="line">010|小名|男</span><br><span class="line">006|六姐|女</span><br></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">学号</th>
+<th style="text-align:center">姓名</th>
+<th style="text-align:right">性别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">001</td>
+<td style="text-align:center">张三</td>
+<td style="text-align:right">男</td>
+</tr>
+<tr>
+<td style="text-align:right">010</td>
+<td style="text-align:center">小名</td>
+<td style="text-align:right">男</td>
+</tr>
+<tr>
+<td style="text-align:right">006</td>
+<td style="text-align:center">六姐</td>
+<td style="text-align:right">女</td>
+</tr>
+</tbody>
+</table>
+<h1 id="九、代码"><a href="#九、代码" class="headerlink" title="九、代码"></a>九、代码</h1><p>语法：<br>单行代码：代码之间方别用一个反引号包裹起来<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`$ echo &apos;This is a single code&apos;`</span><br></pre></td></tr></table></figure></p>
+<p>代码块：代码块之间分别用三个反引号包裹起来<br>头三个反引号后，可以加代码所属的代码语言，可高亮相关代码语法<br>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">```bash</span><br><span class="line">if $1 == &apos;bash&apos;:</span><br><span class="line">    echo &apos;These are bash shell codes.&apos;</span><br><span class="line">if</span><br><span class="line">```</span><br></pre></td></tr></table></figure></p>
+<p>预览效果：<br>单行代码：<br><code>$ echo &#39;This is a single code&#39;</code><br>代码块：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="variable">$1</span> == <span class="string">'bash'</span>:</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'These are bash shell codes.'</span></span><br><span class="line"><span class="keyword">if</span></span><br></pre></td></tr></table></figure></p>
+<!--
+# 十、流程图
+语法：
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```flow</span><br><span class="line"></span><br><span class="line">&amp;```</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    A[A] --&gt; B(go)</span><br></pre></td></tr></table></figure>
+<p>–&gt;</p>
+-->
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://gtmastermio.github.io/2018/08/24/资料目录/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="GTMasterMio">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GTMasterMio's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/08/24/资料目录/" class="post-title-link" itemprop="url">资料目录</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-08-24 16:07:03 / Modified: 16:09:52" itemprop="dateCreated datePublished" datetime="2018-08-24T16:07:03+08:00">2018-08-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="第1章"><a href="#第1章" class="headerlink" title="第1章"></a>第1章</h4><p>第14页，常见的Python错误消息：<br><a href="http://inventwithpython.com/appendixd.html" target="_blank" rel="noopener">http://inventwithpython.com/appendixd.html</a></p>
+<h4 id="第5章"><a href="#第5章" class="headerlink" title="第5章"></a>第5章</h4><p>页码117，完整的源代码：<br><a href="http://inventwithpython.com/chapter10.html" target="_blank" rel="noopener">http://inventwithpython.com/chapter10.html</a></p>
+<h4 id="第7章"><a href="#第7章" class="headerlink" title="第7章"></a>第7章</h4><p>页165，按位运算符：<br><a href="https://wiki.python.org/moin/BitwiseOperators/" target="_blank" rel="noopener">https://wiki.python.org/moin/BitwiseOperators/</a></p>
+<h4 id="第11章"><a href="#第11章" class="headerlink" title="第11章"></a>第11章</h4><p>页码246，CSS选择器教程：<br><a href="https://automatetheboringstuff.com/list-of-css-selector-tutorials.html" target="_blank" rel="noopener">https://automatetheboringstuff.com/list-of-css-selector-tutorials.html</a></p>
+<h4 id="第14章"><a href="#第14章" class="headerlink" title="第14章"></a>第14章</h4><p>页面328，JSON API示例：<br><a href="https://automatetheboringstuff.com/list-of-json-apis.html" target="_blank" rel="noopener">https://automatetheboringstuff.com/list-of-json-apis.html</a></p>
+<h4 id="第15章"><a href="#第15章" class="headerlink" title="第15章"></a>第15章</h4><p>页面349，初学者关于多线程编程的教程：<br><a href="http://inventwithpython.com/blog/2013/04/22/multithreaded-python-tutorial-with-the-threadworms-demo/" target="_blank" rel="noopener">http://inventwithpython.com/blog/2013/04/22/multithreaded-python-tutorial-with-the-threadworms-demo/</a></p>
+<p>第355页和第359页，调度程序教程：<br><a href="https://automatetheboringstuff.com/schedulers.html" target="_blank" rel="noopener">https://automatetheboringstuff.com/schedulers.html</a></p>
+<p>第360页，网络漫画列表：<br><a href="https://automatetheboringstuff.com/list-of-web-comics.html" target="_blank" rel="noopener">https://automatetheboringstuff.com/list-of-web-comics.html</a></p>
+<h4 id="第16章"><a href="#第16章" class="headerlink" title="第16章"></a>第16章</h4><p>页面365，为Google帐户设置应用程序专用密码：<br><a href="https://support.google.com/accounts/answer/185833?hl=en/" target="_blank" rel="noopener">https://support.google.com/accounts/answer/185833?hl=en/</a></p>
+<p>页面372，在Gmail中进行高级搜索：<br><a href="https://support.google.com/mail/answer/7190?hl=en/" target="_blank" rel="noopener">https://support.google.com/mail/answer/7190?hl=en/</a></p>
+<p>页面382，Twilio状态消息：<br><a href="https://www.twilio.com/help/faq/sms/what-do-the-sms-statuses-mean/" target="_blank" rel="noopener">https://www.twilio.com/help/faq/sms/what-do-the-sms-statuses-mean/</a></p>
+<p>Page 382，使用Twilio接收短信：<br><a href="https://www.twilio.com/docs/quickstart/php/sms/hello-monkey/" target="_blank" rel="noopener">https://www.twilio.com/docs/quickstart/php/sms/hello-monkey/</a></p>
+<p>页面386，通过电子邮件项目控制您的计算机：请参阅torrentStarter.py。</p>
+<h4 id="第17章"><a href="#第17章" class="headerlink" title="第17章"></a>第17章</h4><p>页面389，RGB颜色值：<br><a href="https://en.wikipedia.org/wiki/Web_colors" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Web_colors</a></p>
+<h4 id="第18章"><a href="#第18章" class="headerlink" title="第18章"></a>第18章</h4><p>页431，通用Web表单：<br><a href="http://autbor.com/form" target="_blank" rel="noopener">http://autbor.com/form</a></p>
+<p>页面439，构建一个玩网页游戏的Python机器人：<br><a href="http://inventwithpython.com/blog/2014/12/17/programming-a-bot-to-play-the-sushi-go-round-flash-game/" target="_blank" rel="noopener">http://inventwithpython.com/blog/2014/12/17/programming-a-bot-to-play-the-sushi-go-round-flash-game/</a></p>
+<h4 id="附录C"><a href="#附录C" class="headerlink" title="附录C"></a>附录C</h4><p>第447页，有编程习惯问题的网站列表：<br><a href="https://automatetheboringstuff.com/list-of-programming-practice-sites.html" target="_blank" rel="noopener">https://automatetheboringstuff.com/list-of-programming-practice-sites.html</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://gtmastermio.github.io/2018/08/24/Python基础/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="GTMasterMio">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GTMasterMio's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/08/24/Python基础/" class="post-title-link" itemprop="url">Python基础</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-08-24 14:21:53" itemprop="dateCreated datePublished" datetime="2018-08-24T14:21:53+08:00">2018-08-24</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-08-27 09:05:31" itemprop="dateModified" datetime="2018-08-27T09:05:31+08:00">2018-08-27</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h2><h3 id="错误没关系"><a href="#错误没关系" class="headerlink" title="错误没关系"></a>错误没关系</h3><p>如果程序包含计算机不能理解的代码，就会崩溃，这将导致Python显示错误信息，错误信息并不会破坏你的计算机，所以不要害怕犯错误。“崩溃”只是意味着程序意外地停止执行。<br>    如果你希望对一条错误信息了解更多，可以在网上查找这条信息的准确文本，找到关于这个错误的更多内容。也可以查看<a href="http://inventwithpython.com/appendixd.html" target="_blank" rel="noopener">common error messages</a>，这里有常见的Python错误信息和含义的列表。</p>
+<h3 id="数学操作符"><a href="#数学操作符" class="headerlink" title="数学操作符"></a>数学操作符</h3><p>Python表达式中也可以使用大量其他操作符。例如，表1-1列出了Python的所有数学操作符。</p>
+<p><strong>表1-1</strong> 数学操作符</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">操作符</th>
+<th style="text-align:left">操作</th>
+<th style="text-align:left">例子</th>
+<th style="text-align:left">求值为</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">**</td>
+<td style="text-align:left">指数</td>
+<td style="text-align:left">2 ** 3</td>
+<td style="text-align:left">8</td>
+</tr>
+<tr>
+<td style="text-align:left">%</td>
+<td style="text-align:left">取模/取余数</td>
+<td style="text-align:left">22 % 8</td>
+<td style="text-align:left">6</td>
+</tr>
+<tr>
+<td style="text-align:left">//</td>
+<td style="text-align:left">整除/商数取整</td>
+<td style="text-align:left">22 // 8</td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:left">/</td>
+<td style="text-align:left">除法</td>
+<td style="text-align:left">22 / 8</td>
+<td style="text-align:left">2.75</td>
+</tr>
+<tr>
+<td style="text-align:left">*</td>
+<td style="text-align:left">乘法</td>
+<td style="text-align:left">3 * 5</td>
+<td style="text-align:left">15</td>
+</tr>
+<tr>
+<td style="text-align:left">-</td>
+<td style="text-align:left">减法</td>
+<td style="text-align:left">5 - 2</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">+</td>
+<td style="text-align:left">加法</td>
+<td style="text-align:left">2 + 2</td>
+<td style="text-align:left">4</td>
+</tr>
+</tbody>
+</table>
+<p>数学操作符的操作顺序（也称为“优先级”）与数学中类似。**操作符首先求值，接下来是*、/、//和%操作符，从左到右计算。+和-操作符最后求值，也是从左到右计算。如果需要，可以用括号来改变通常的优先级，（）内层括号最优先。</p>
+<h2 id="Hello-py程序"><a href="#Hello-py程序" class="headerlink" title="Hello.py程序"></a>Hello.py程序</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># This program says hello and asks for my name.</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">'Hello world!'</span>)</span><br><span class="line">print(<span class="string">'What is your name?'</span>) <span class="comment"># ask for their name</span></span><br><span class="line">myName = input()</span><br><span class="line">print(<span class="string">'It is good to meet you, '</span> + myName)</span><br><span class="line">print(<span class="string">'The length of your name is:'</span>)</span><br><span class="line">print(len(myName))</span><br><span class="line">print(<span class="string">'What is your age?'</span>) <span class="comment"># ask for their age</span></span><br><span class="line">myAge = input()</span><br><span class="line">print(<span class="string">'You will be '</span> + str(int(myAge) + <span class="number">1</span>) + <span class="string">' in a year.'</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="程序剖析"><a href="#程序剖析" class="headerlink" title="程序剖析"></a>程序剖析</h2><h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是一条注释，#标志之后</span></span><br></pre></td></tr></table></figure>
+<p>有时候，程序员在测试代码时，会在一行代码前面加上#，临时删除它。这称为“注释掉”代码。在你想搞清楚为什么程序不工作时，这样做可能有用。稍后，如果你准备还原这一行代码，可以去掉#。</p>
+<h3 id="print-函数"><a href="#print-函数" class="headerlink" title="print()函数"></a>print()函数</h3><p>print()函数将括号内的字符串显示在屏幕上。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(‘Hello world!’)</span><br><span class="line">print(‘What <span class="keyword">is</span> your name’)</span><br></pre></td></tr></table></figure></p>
+<p>代码行print(‘Hello world!’)表示“打印出字符串’Hello world!’的文本”。Python执行到这行时，你告诉Python调用print()函数，并将字符串“传递”给函数。传递给函数的值称为“参数”。请注意，引号没有打印在屏幕上。它们只是表示字符串的起止，不是字符串的一部分。<br>也可以用这个函数在屏幕上打印出空行，只要调用print()就可以了，括号内没有任何东西。</p>
+<h3 id="input-函数"><a href="#input-函数" class="headerlink" title="input()函数"></a>input()函数</h3><p>函数等待用户在键盘输入一些文本，并按下回车键。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myName = input()</span><br></pre></td></tr></table></figure></p>
+<p>这个函数求值为一个字符串，即用户输入的文本。前面的代码行将这个字符串赋给变量myName。<br>你可以认为input()函数调用是一个表达式，它求值为用户输入的任何字符串。如果你输入‘AI’，那么该表达式就求值为myName = ‘AI’。</p>
+<h3 id="打印用户的名字"><a href="#打印用户的名字" class="headerlink" title="打印用户的名字"></a>打印用户的名字</h3><p>接下来的print()调用，在括号间包含表达式‘It is goot to meet you,’ + myName。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(‘It <span class="keyword">is</span> goot to meet you,’ + myName)</span><br></pre></td></tr></table></figure></p>
+<p>要记住，表达式总是可以求值为一个值。如果’AI’是上一行代码保存在myName中的值，那么这个表达式就是求值为‘It is goot to meet you, AI’。这个字符串传给print()，它将输出到屏幕上。</p>
+<h3 id="len-函数"><a href="#len-函数" class="headerlink" title="len()函数"></a>len()函数</h3><p>你可以向len()函数传递一个字符串（或包含字符串的变量），然后该函数求值为一个整型值，即字符串中的字符的个数。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(‘The Length of your name <span class="keyword">is</span>: ’)</span><br><span class="line">print(len(myName))</span><br></pre></td></tr></table></figure></p>
+<p>就像这些例子，len(myName)求值为一个整数。然后它传递给print()，在屏幕上显示。请注意，print()允许传入一个整型值或字符串。但如果在期间加入+操作符对一个整数和一个字符串相加，那是不可以的，会发生错误。</p>
+<h3 id="str-、int-和float-函数"><a href="#str-、int-和float-函数" class="headerlink" title="str()、int()和float()函数"></a>str()、int()和float()函数</h3><p>如果想要连接一个整数（如29）和一个字符串，再传递给print()，就需要获得值’29’。它是29的字符串形式。str()函数可以传入一个整型值，并求值为它的字符串形式，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; str(29)</span><br><span class="line">’29’</span><br><span class="line">&gt;&gt;&gt; print(‘I am ‘ + str(29) + ‘ years old.’)</span><br><span class="line">I am 29 years old.</span><br></pre></td></tr></table></figure></p>
+<p>因为str(29)求值为‘29’，所以表达式‘I am ’+ str(29) + ‘ years old.’求值为‘I am ’ + ’29’ + ‘ years old.’，它又求值为’I am 29 years old.’。<br>str()、int()和float()函数将分别求值为传入值的字符串、整数和浮点数形式。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; str(0)</span><br><span class="line">‘0’</span><br><span class="line">&gt;&gt;&gt; str(-3.14)</span><br><span class="line">‘-3.14’</span><br><span class="line">&gt;&gt;&gt; int(’42’)</span><br><span class="line">42</span><br><span class="line">&gt;&gt;&gt; int(‘-99’)</span><br><span class="line">-99</span><br><span class="line">&gt;&gt;&gt; int(1.25)</span><br><span class="line">1</span><br><span class="line">&gt;&gt;&gt; int(1.99)</span><br><span class="line">1</span><br><span class="line">&gt;&gt;&gt; float(‘3.14’)</span><br><span class="line">3.14</span><br><span class="line">&gt;&gt;&gt; float(10)</span><br><span class="line">10.0</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://gtmastermio.github.io/2018/08/22/语义化版本_2.0.0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="GTMasterMio">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GTMasterMio's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/08/22/语义化版本_2.0.0/" class="post-title-link" itemprop="url">语义化版本_2.0.0</a>
               
             
           </h1>
@@ -336,6 +1307,7 @@
           
 
           
+            
             
           
 
@@ -472,6 +1444,9 @@
     
 
     
+      
+    
+    
 
     
 
@@ -514,7 +1489,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="GTMasterMio">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -529,9 +1504,8 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/08/20/这是我第一篇blog/" itemprop="url">
-                  这是我第一篇blog
-                </a>
+                
+                <a href="/2018/08/20/这是我第一篇blog/" class="post-title-link" itemprop="url">这是我第一篇blog</a>
               
             
           </h1>
@@ -556,7 +1530,7 @@
                 
               
 
-              <time title="Created: 2018-08-20 14:53:32 / Modified: 15:38:55" itemprop="dateCreated datePublished" datetime="2018-08-20T14:53:32+08:00">2018-08-20</time>
+              <time title="Created: 2018-08-20 14:53:32 / Modified: 16:47:38" itemprop="dateCreated datePublished" datetime="2018-08-20T14:53:32+08:00">2018-08-20</time>
             
 
             
@@ -569,6 +1543,7 @@
           
 
           
+            
             
           
 
@@ -611,6 +1586,9 @@
 
     
 
+    
+      
+    
     
 
     
@@ -656,19 +1634,18 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
     <div class="sidebar-inner">
 
       
 
       
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">GTMasterMio</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <div class="site-description motion-element" itemprop="description"></div>
           </div>
 
           
@@ -678,14 +1655,44 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">categories</span>
+                  
+                </div>
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">tags</span>
+                  
+                </div>
               
             </nav>
           
@@ -695,6 +1702,7 @@
           
 
           
+
           
 
           
@@ -706,7 +1714,7 @@
           
 
         </div>
-      </section>
+      </div>
 
       
 
@@ -714,6 +1722,7 @@
 
     </div>
   </aside>
+  
 
 
         
@@ -722,7 +1731,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -734,9 +1743,7 @@
 </div>
 
 
-
-
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
 
 
 
@@ -744,7 +1751,7 @@
 
 
 
-  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Muse</a> v6.4.0</div>
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.0</div>
 
 
 
@@ -770,7 +1777,7 @@
     
 
     
-	
+
     
 
     
@@ -778,7 +1785,7 @@
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -810,59 +1817,51 @@
 
 
   
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
+  <script src="/js/utils.js?v=7.1.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
+  <script src="/js/motion.js?v=7.1.0"></script>
 
 
 
   
   
 
-  
 
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
+  <script src="/js/schemes/muse.js?v=7.1.0"></script>
 
 
 
   
 
+  
 
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+
+  
+
+  
 
   
 
 
 
-
-
-
-
-
-
-
   
-
 
 
 
@@ -876,6 +1875,13 @@
   
 
   
+
+  
+
+  
+
+  
+
   
 
   
