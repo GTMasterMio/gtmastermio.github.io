@@ -2522,10 +2522,10 @@ main >.inner {
   color: #55acd5;
 }
 .social .item.bilibili::before {
-  background-color: ilibil;
+  background-color: #55ACD5;
 }
 .social .item.bilibili i {
-  color: ilibil;
+  color: #55ACD5;
 }
 .social .item:focus i,
 .social .item:hover i {
